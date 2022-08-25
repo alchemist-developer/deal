@@ -1,7 +1,13 @@
+import styled from 'styled-components'
+
+const Heading = styled.h1`
+background-color: ${({ theme }) => theme.colors.secondaryColor};
+`
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello AutoForce</h1>
+      <Heading>Hello AutoForce</Heading>
     </div>
   )
 }
