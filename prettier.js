@@ -4,4 +4,7 @@ module.exports = {
   singleQuote: true,
   printWidth: 80,
   tabWidth: 2,
+  root: true,
+  extends: "@react-native-community",
+  rules: { "prettier/prettier": ["error", { endOfLine: "auto" }] },
 };
