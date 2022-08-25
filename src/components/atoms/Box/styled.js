@@ -1,8 +1,9 @@
+/* eslint-disable prettier/prettier */
 import styled, { css } from "styled-components";
 
 export const Box = styled.div`
-  ${({ background, width }) => css`
-    background-color: ${background};
+  ${({ bg, width }) => css`
+    background-color: ${bg};
     width: ${width}
     }
   `};

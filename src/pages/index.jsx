@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled from "styled-components";
 import Box from "../components/atoms/Box";
 
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Box>
-        <Box>
+        <Box bg="red">
           <h1>oioioioioioioi</h1>
         </Box>
       </Box>
