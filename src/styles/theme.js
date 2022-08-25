@@ -1,9 +1,9 @@
 export const theme = {
   colors: {
-    primaryColor: "#0A1128",
+    primaryColor: "rgba(255, 255, 255, 1)",
     secondaryColor: "rgba(55, 84, 226, 1)",
-    white: "#FFFFFF",
-    mediumGray: "#DDDDDD",
+    whatsappColor: "rgba(78, 200, 89, 1)",
+    blackColor: "rgba(0, 0, 0, 1)",
   },
   font: {
     family: {
@@ -33,5 +33,12 @@ export const theme = {
     xxlarge: "4.8rem",
     huge: "5.6rem",
     xhuge: "6.4rem",
+  },
+  breakpoints: {
+    xsmall: "320px",
+    small: "576px",
+    medium: "768px",
+    large: "992px",
+    xlarge: "1200px",
   },
 };
