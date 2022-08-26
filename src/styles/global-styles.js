@@ -1,9 +1,9 @@
+/* eslint-disable prettier/prettier */
 import { createGlobalStyle, css } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
     box-sizing: border-box;
   }
   html {
@@ -15,8 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.font.family.default};
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
-    margin: ${({ theme }) => theme.spacings.large} 0;
+    font-family: ${({ theme }) => theme.font.family.default};
   }
   p {
     margin: ${({ theme }) => theme.spacings.medium} 0;
@@ -27,9 +26,14 @@ export const GlobalStyles = createGlobalStyle`
   }
   a {
     color: ${({ theme }) => theme.colors.secondaryColor};
+    cursor: pointer;
   }
-  .table {
-    width: 100%;
-    overflow-y: auto;
+
+.spanFooter {
+  margin-right: 10px !important;
+}
+
+  u {
+    cursor: pointer;
   }
 `;

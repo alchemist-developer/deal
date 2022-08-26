@@ -1,8 +1,33 @@
 /* eslint-disable prettier/prettier */
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Typography = styled.p`
-    font-size: ${({theme}) => theme.font.sizes.medium};
-    font-family: ${({ theme }) => theme.font.family.default};
-    color: ${({ theme }) => theme.colors.blackColor};
+  ${({
+    family,
+    width,
+    justify,
+    align,
+    height,
+    direction,
+    color,
+    fontWeight,
+    fontSize,
+    lineHeight,
+    margin,
+    padding,
+  }) => css`
+    width: ${width};
+    height: ${height};
+    font-size: ${fontSize};
+    font-weight: ${fontWeight};
+    line-height: ${lineHeight};
+    display: flex;
+    flex-direction: ${direction};
+    justify-content: ${justify};
+    align-items: ${align};
+    color: ${color};
+    margin: ${margin};
+    padding: ${padding};
+    font-family: ${family};
+  `}
 `;

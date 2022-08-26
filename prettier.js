@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line no-undef
 module.exports = {
   semi: true,
   trailingComma: "all",

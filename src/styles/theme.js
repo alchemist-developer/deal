@@ -1,14 +1,15 @@
+/* eslint-disable prettier/prettier */
 export const theme = {
   colors: {
     primaryColor: "rgba(255, 255, 255, 1)",
     secondaryColor: "rgba(55, 84, 226, 1)",
-    whatsappColor: "rgba(78, 200, 89, 1)",
-    blackColor: "rgba(0, 0, 0, 1)",
+    tertiaryColor: "#3754E2",
+    whatsappColor: "#4EC859",
   },
   font: {
     family: {
       default: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif",
+      secondary: "'Ubuntu', sans-serif",
     },
     sizes: {
       xsmall: "8rem",
