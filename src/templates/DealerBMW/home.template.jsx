@@ -7,6 +7,7 @@ import BmwCabrioS4 from "../../../public/static/BmwCabrioS4.svg";
 import Highlighs from "../../components/organisms/Highlights";
 import Footer from "../../components/organisms/Footer";
 import Divisor from "../../components/atoms/Divisor";
+import { Infos } from "../../utils/fakeApi";
 
 const HomeTemplate = () => {
   return (
@@ -28,13 +29,13 @@ const HomeTemplate = () => {
               color="rgba(102, 102, 102, 1)"
               fontWeight="400"
               fontSize="12px"
-              text={["Ofertas → ", <u>Novo Série 1</u>]}
+              text={["Ofertas → ‎", <u>Novo Série 1</u>]}
             />
             <Typography
               fontWeight="700"
               fontSize="32px"
               margin={"10px 0 !important"}
-              text="BMW Série 4 Cabrio"
+              text={Infos.title}
             />
           </Box>
           <Typography
@@ -73,7 +74,7 @@ const HomeTemplate = () => {
               <Typography
                 margin={"0 0 0 10px !important"}
                 fontSize="32px"
-                text={["A partir de ", <strong>R$ 179.950</strong>]}
+                text={["A partir de ", "‎ ", <strong>{Infos.price}</strong>]}
               />
             </Box>
           </Box>
@@ -105,11 +106,7 @@ const HomeTemplate = () => {
               "BMW Série 4 Cabrio",
             ]}
           />
-          <Typography
-            width="540px"
-            fontSize="18px"
-            text="A performance irradia de cada ângulo do design inovador do BMW Série 4 Cabrio. Começando pela dianteira, que conta com para-choque clássico dos modelos BMW. Ao correr os olhos pelo design, nota-se imediatamente o teto inclinado e a linha do ombro marcante, que equilibra o centro de gravidade do carro. Voltando-se para as laterais, são os robustos arcos de 10 mm e as incomuns rodas de 21 polegadas que chamam a atenção. Ao chegar na traseira do BMW Série 4 Cabrio, a força do design continua surpreendendo. O para-choque com difusão clássica dos modelos BMW, as lâminas horizontais e teto com spoiler ganham um toque a mais de amplitude devido ao vidro traseiro levemente rebaixado."
-          />
+          <Typography width="540px" fontSize="18px" text={Infos.description} />
         </Box>
 
         <Box direction={"column"} justify="center" padding={"18px 100px"}>
@@ -128,8 +125,8 @@ const HomeTemplate = () => {
             <iframe
               width="100%"
               height="1100"
-              src="https://www.youtube.com/embed/cFyrTEYyq64"
-              title="YouTube video player"
+              src={Infos.video}
+              title="bmw cabrio video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -141,10 +138,7 @@ const HomeTemplate = () => {
         <Box direction="column" padding={"18px 100px 50px 100px"}>
           <Typography fontSize="18px" fontWeight={"700"} text="Texto Legal:" />
 
-          <Typography
-            fontSize="18px"
-            text="Virtus 1.0, 4 portas (cód. BZ23B3), ano/modelo 18/18 à vista a partir de R$ 73490 ou financiado com entrada de R$ 44094 (60%) e mais 24 prestações mensais de R$ 1286. Taxa de juros: 0% a.m. e 0% a.a. Total da operação: R$ 74958. CET máximo para esta operação: 04,75%% a.a. Condições válidas para financiamento pelo Banco Volkswagen. Oferta válida exclusivamente para a cidade de Natal / RN, no período de 30/09/2018 a 31/10/2018 para veículos com pintura sólida."
-          />
+          <Typography fontSize="18px" text={Infos.legalText} />
         </Box>
       </Box>
       <Footer />

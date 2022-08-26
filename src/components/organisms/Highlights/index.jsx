@@ -7,6 +7,7 @@ import IconTank from "../../../../public/static/icon_tank.svg";
 import IconCilindrada from "../../../../public/static/icon_cilindrada.svg";
 import IconPotencia from "../../../../public/static/icon_potencia.svg";
 import IconVelocidade from "../../../../public/static/icon_velocidademax.svg";
+import { Infos } from "../../../utils/fakeApi";
 
 const Highlighs = () => {
   return (
@@ -32,7 +33,7 @@ const Highlighs = () => {
               <Typography
                 color={"rgba(55, 84, 226, 1)"}
                 fontWeight="700"
-                text="14,7 km/l"
+                text={Infos.consumption}
               />
             </Box>
           </Box>
@@ -44,7 +45,7 @@ const Highlighs = () => {
               <Typography
                 color={"rgba(55, 84, 226, 1)"}
                 fontWeight="700"
-                text="999 cm3"
+                text={Infos.displacement}
               />
             </Box>
           </Box>
@@ -58,7 +59,7 @@ const Highlighs = () => {
               <Typography
                 color={"rgba(55, 84, 226, 1)"}
                 fontWeight="700"
-                text="75 cv"
+                text={Infos.power}
               />
             </Box>
           </Box>
@@ -70,7 +71,7 @@ const Highlighs = () => {
               <Typography
                 color={"rgba(55, 84, 226, 1)"}
                 fontWeight="700"
-                text="154 km/h"
+                text={Infos.velocity}
               />
             </Box>
           </Box>

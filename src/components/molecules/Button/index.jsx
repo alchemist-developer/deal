@@ -7,7 +7,7 @@ const Button = ({ bg, margin, padding, width, ...props }) => {
     <S.Button width={width} padding={padding} margin={margin} bg={bg}>
       {props.text}
     </S.Button>
-  ); 
+  );
 };
 
 Button.propTypes = AppProps;

@@ -11,7 +11,7 @@ export const Button = styled.a`
     height: 40px;
     border-radius: 50px;
     color: white;
-    background-color: ${({theme })=> theme.colors.whatsappColor};
+    background-color: ${({ theme }) => theme.colors.whatsappColor};
     margin: ${margin};
     padding: ${padding};
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
