@@ -1,13 +1,6 @@
-import styled from "styled-components";
-
-const Heading = styled.h1`
-  background-color: ${({ theme }) => theme.colors.secondaryColor};
-`;
+/* eslint-disable react/jsx-key */ /* eslint-disable prettier/prettier */
+import HomeTemplate from "../templates/DealerBMW/home.template";
 
 export default function Home() {
-  return (
-    <div>
-      <Heading>Hello AutoForce</Heading>
-    </div>
-  );
+  return <HomeTemplate />;
 }
